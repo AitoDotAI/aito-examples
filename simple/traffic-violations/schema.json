@@ -1,0 +1,65 @@
+{
+    "schema": {
+        "violations": {
+            "type": "table",
+            "columns": {
+                "accident": {
+                    "type": "Boolean",
+                    "nullable": false
+                },
+                "description": {
+                    "type": "String",
+                    "nullable": false
+                },
+                "vehicleType": {
+                    "type": "String",
+                    "nullable": false
+                },
+                "injury": {
+                    "type": "Boolean",
+                    "nullable": false
+                },
+                "damage": {
+                    "type": "Boolean",
+                    "nullable": false
+                },
+                "fatal": {
+                    "type": "Boolean",
+                    "nullable": false
+                },
+                "hazmat": {
+                    "type": "Boolean",
+                    "nullable": false
+                },
+                "vehicleYear": {
+                    "type": "Int",
+                    "nullable": false
+                },
+                "violation": {
+                    "type": "String",
+                    "nullable": false
+                },
+                "time": {
+                    "type": "String",
+                    "nullable": false
+                },
+                "alcohol": {
+                    "type": "Boolean",
+                    "nullable": false
+                },
+                "belts": {
+                    "type": "Boolean",
+                    "nullable": false
+                },
+                "vehicleColor": {
+                    "type": "String",
+                    "nullable": true
+                },
+                "vehicleMake": {
+                    "type": "String",
+                    "nullable": true
+                }
+            }
+        }
+    }
+}
