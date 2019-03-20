@@ -1,7 +1,7 @@
 # Aito example gallery
 
 This repository contains the examples presented in the [example-gallery](https://aito.ai/example-gallery) (coming soon)
-on the [Aito-website](https://aito.ai).
+on our website [Aito.ai](https://aito.ai).
 
 All the released examples contain the steps for reproducing the results using Aito. We use live data sources for the
 examples, so the results might differ slightly depending on when the data was fetched. In case the source data
@@ -50,7 +50,6 @@ conclusion.
 If you are interested in getting access to the limited beta, please contact us to request access. We're available
 
 * by email at hello@aito.ai
-* by the chat on [our webpage](https://aito.ai)
 * in [the AitoDotAi community at Spectrum](https://spectrum.chat/aitodotai)
 
 Please contact us and let us help you with making your creation smarter. We're interested in hearing what you're
