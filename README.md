@@ -35,6 +35,12 @@ We gladly accept requests for additional examples, if you have an idea on someth
 gallery. Please create a pull-request with an example, an issue with an idea for one, or contact us using the
 details found below.
 
+## Useful links and documents
+
+The complete API-docs for Aito are available here: [https://aito.ai/docs/api](https://aito.ai/docs/api)
+
+A more comprehensive tutorial for using Aito can be found here: [https://github.com/AitoDotAI/aitoai-tutorial](https://github.com/AitoDotAI/aitoai-tutorial)
+
 ## Aito limited beta
 
 Aito.ai, is a ML SaaS, which enables fast iteration, solving a wide variety of problems and explainable results.

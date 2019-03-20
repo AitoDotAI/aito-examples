@@ -1,6 +1,12 @@
 # Finding statistical relationships within traffic violations
 
-How to duplicate traffic violations demo
+How to recreate the traffic violations demo.
+
+## Useful links and documents
+
+The complete API-docs for Aito are available here: [https://aito.ai/docs/api](https://aito.ai/docs/api)
+
+A more comprehensive tutorial for using Aito can be found here: [https://github.com/AitoDotAI/aitoai-tutorial](https://github.com/AitoDotAI/aitoai-tutorial)
 
 ## Downloading the data
 
