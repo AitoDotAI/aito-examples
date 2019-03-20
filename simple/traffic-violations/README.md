@@ -66,7 +66,8 @@ After gzipping the data can be uploaded to Aito. We used [uploadData.py](/upload
 ## Querying from Aito
 
 After all lines have been uploaded, we can start using Aito.
-For example the query used in [example gallery](https://aito.ai/example-gallery/traffic-violations) used [predict endpoint](https://aito.ai/docs/api/#post-api-v1-predict) for predicting the time of the traffic violations:
+For example the query used in [traffic violations example](https://aito.ai/example-gallery/traffic-violations)
+used the [predict endpoint](https://aito.ai/docs/api/#post-api-v1-predict) for predicting the time of the traffic violations:
 
 ```javascript
 {
