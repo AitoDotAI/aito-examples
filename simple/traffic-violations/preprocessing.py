@@ -3,7 +3,7 @@ import json
 from multiprocessing import cpu_count, Pool
 import numpy
 import pandas
-import sys, getopt
+import argparse
 
 def parallelize(data, func):
     cores = cpu_count() - 1 # use n-1 cores
@@ -15,6 +15,10 @@ def parallelize(data, func):
     return data
 
 def carMakerToClass(dataSplit):
+
+  with open('data/vehicleManufacturers.json') as f:
+    carMakers = json.load(f)['makers']
+
   def toClass(value):
     if value == 'VW':
       return 'VOLKSWAGEN'
@@ -36,9 +40,9 @@ def timeToDayTime(value):
   else:
     return  'evening'
 
-def preprocess(sampleSize=None):
+def preprocess(dataPath, sampleSize=None):
   # Rename data columns
-  data = pandas.read_csv('data/Traffic_Violations.csv',
+  data = pandas.read_csv(dataPath,
     skiprows=1,
     names=[
       "date", "time", "agency", "subAgency", "description", "location", "latitude", "longitude", "accident", "belts", "injury", "damage",
@@ -76,25 +80,13 @@ def preprocess(sampleSize=None):
   print('Data preprocessed')
 
 
-def main(argv):
-  try:
-    opts, args = getopt.getopt(argv, 'h:s:',['sample='])
-  except getopt.GetoptError:
-      print('preprocessing.py [-s sampleSize]')
-      sys.exit(2)
-
-  sampleSize = None
-  for opt, arg in opts:
-      if opt == '-h':
-         print('preprocessing.py [-s sampleSize]')
-         sys.exit()
-      elif opt in ("-s", "--sample"):
-        sampleSize = int(arg)
-         
-  with open('data/carMakers.json') as f:
-    carMakers = json.load(f)['makers']
-  preprocess(sampleSize)
+def main():
+  parser = argparse.ArgumentParser()
+  parser.add_argument('dataPath')
+  parser.add_argument('-s', '--sample', help='Sample data', nargs='?', const=1000, type=int)
+  args = parser.parse_args()
+  preprocess(args.dataPath, args.sample)
 
 if __name__ == "__main__":
-   main(sys.argv[1:])
+   main()
 
