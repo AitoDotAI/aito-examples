@@ -67,7 +67,7 @@ Before uploading the data to Aito, we need to gzip the preprocessed data file. T
 gzip preprocessed.json
 ```
 
-After gzipping the data can be uploaded to Aito. We used [uploadData.py](/uploadData.py) file for this. More about file upload you can read from [our API documentation](https://aito.ai/docs/api/#post-api-v1-data-table-file)
+After gzipping the data can be uploaded to Aito. We used [uploadData.py](./uploadData.py) file for this. More about file upload you can read from [our API documentation](https://aito.ai/docs/api/#post-api-v1-data-table-file)
 
 ## Querying from Aito
 

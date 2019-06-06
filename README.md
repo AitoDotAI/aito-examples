@@ -1,6 +1,6 @@
 # Aito example gallery
 
-This repository contains the examples presented in the [example-gallery](https://aito.ai/example-gallery) (coming soon)
+This repository contains the examples presented in the [example-gallery](https://aito.ai/example-gallery)
 on our website [Aito.ai](https://aito.ai).
 
 All the released examples contain the steps for reproducing the results using Aito. We use live data sources for the
