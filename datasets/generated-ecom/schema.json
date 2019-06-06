@@ -1,0 +1,70 @@
+{
+  "schema": {
+    "orders": {
+      "type": "table",
+      "columns": {
+        "id": { "type": "String" },
+        "user": { "type": "Int" },
+        "product": { "type": "String" },
+        "quantity": { "type": "Int" },
+        "time": { "type": "String" }
+      }
+    },
+    "invoices": {
+      "type": "table",
+      "columns": {
+        "id": { "type": "String" },
+        "order_id": { "type": "String" },
+        "customer_id": { "type": "Int" },
+        "time": { "type": "String" },
+        "product_id": { "type": "String" },
+        "product_quantity": { "type": "Int" },
+        "product_unit_price": { "type": "Decimal" },
+        "product_total_price": { "type": "Decimal" },
+        "sales_rep": { "type": "String" },
+        "warehouse": { "type": "String" },
+        "distributor": { "type": "String" }
+      }
+    },
+    "users": {
+      "type": "table",
+      "columns": {
+        "id": { "type": "Int" },
+        "first_name": { "type": "String" },
+        "last_name": { "type": "String" },
+        "gender": { "type": "String" },
+        "email": { "type": "String" },
+        "address": { "type": "String" },
+        "city": { "type": "String" },
+        "postal_code": { "type": "Int" },
+        "age": { "type": "Int" }
+      }
+    },
+    "products": {
+      "type": "table",
+      "columns": {
+        "sku": { "type": "String" },
+        "name": { "type": "String" },
+        "description": { "type": "String" },
+        "sale_price": { "type": "Decimal" },
+        "category": { "type": "String" },
+        "category_tree": { "type": "String" },
+        "average_product_rating": { "type": "Decimal" },
+        "brand": { "type": "String" },
+        "total_number_reviews": { "type": "Decimal" },
+        "Reviews": { "type": "String" }
+      }
+    },
+    "impressions": {
+      "type": "table",
+      "columns": {
+        "id": { "type": "Int" },
+        "user": { "type": "Int" },
+        "query": { "type": "String", "nullable": true },
+        "product": { "type": "String" },
+        "click": { "type": "Boolean" },
+        "purchase": { "type": "Boolean" }
+      }
+    }
+  }
+}
