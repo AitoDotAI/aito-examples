@@ -4,8 +4,8 @@
       "type": "table",
       "columns": {
         "id": { "type": "String" },
-        "user": { "type": "Int" },
-        "product": { "type": "String" },
+        "user": { "type": "Int", "link": "users.id" },
+        "product": { "type": "String", "link": "products.sku" },
         "quantity": { "type": "Int" },
         "time": { "type": "String" }
       }
@@ -14,10 +14,10 @@
       "type": "table",
       "columns": {
         "id": { "type": "String" },
-        "order_id": { "type": "String" },
-        "customer_id": { "type": "Int" },
+        "order_id": { "type": "String", "link": "orders.id" },
+        "customer_id": { "type": "Int", "link": "users.id" },
         "time": { "type": "String" },
-        "product_id": { "type": "String" },
+        "product_id": { "type": "String", "link": "products.sku" },
         "product_quantity": { "type": "Int" },
         "product_unit_price": { "type": "Decimal" },
         "product_total_price": { "type": "Decimal" },
@@ -59,9 +59,9 @@
       "type": "table",
       "columns": {
         "id": { "type": "Int" },
-        "user": { "type": "Int" },
+        "user": { "type": "Int", "link": "users.id" },
         "query": { "type": "String", "nullable": true },
-        "product": { "type": "String" },
+        "product": { "type": "String", "link": "products.sku" },
         "click": { "type": "Boolean" },
         "purchase": { "type": "Boolean" }
       }
