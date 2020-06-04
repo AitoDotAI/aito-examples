@@ -2,12 +2,6 @@
 
 How to recreate the traffic violations demo.
 
-## Useful links and documents
-
-The complete API-docs for Aito are available here: [https://aito.ai/docs/api](https://aito.ai/docs/api)
-
-A more comprehensive tutorial for using Aito can be found here: [https://github.com/AitoDotAI/aitoai-tutorial](https://github.com/AitoDotAI/aitoai-tutorial)
-
 ## Downloading the data
 
 Data used in this example is [traffic violations data from Maryland](https://catalog.data.gov/dataset/traffic-violations-56dda).
