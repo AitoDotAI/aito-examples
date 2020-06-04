@@ -1,0 +1,6 @@
+{'Inv_Id': 15058,
+ 'Vendor_Code': 'VENDOR-1883',
+ 'GL_Code': 'GL-2182000',
+ 'Inv_Amt': 18.88,
+ 'Item_Description': 'Auto Leasing and Maintenance'
+}

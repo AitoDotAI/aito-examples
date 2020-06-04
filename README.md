@@ -13,7 +13,7 @@ examples and descriptions.
 ## All available examples
 
 * [Find statistical relationships within traffic violations](./traffic-violations)
-* [Predict missing values in Robot Framework](./) UNDER CONSTRUCTION
+* [Predict missing values in Robot Framework](./roboframework-invoice)
 
 We gladly accept requests for additional examples, if you have an idea on something you would like to see in our
 gallery. Please create a pull-request with an example, an issue with an idea for one, or contact us using the
