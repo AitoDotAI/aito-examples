@@ -1,0 +1,6 @@
+{'Inv_Id': 15033,
+ 'Vendor_Code': 'VENDOR-1424',
+ 'GL_Code': 'GL-6100410',
+ 'Inv_Amt': 78.78,
+ 'Item_Description': 'Digital Display'
+}
