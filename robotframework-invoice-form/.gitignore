@@ -1,0 +1,5 @@
+*.log
+log.*
+output.xml
+report.html
+*~
