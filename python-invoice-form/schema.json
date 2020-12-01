@@ -1,0 +1,30 @@
+{
+    "columns": {
+        "GL_Code": {
+            "nullable": false,
+            "type": "String"
+        },
+        "Inv_Amt": {
+            "nullable": false,
+            "type": "Decimal"
+        },
+        "Inv_Id": {
+            "nullable": false,
+            "type": "Int"
+        },
+        "Item_Description": {
+            "analyzer": "english",
+            "nullable": false,
+            "type": "Text"
+        },
+        "Product_Category": {
+            "nullable": false,
+            "type": "String"
+        },
+        "Vendor_Code": {
+            "nullable": false,
+            "type": "String"
+        }
+    },
+    "type": "table"
+}
