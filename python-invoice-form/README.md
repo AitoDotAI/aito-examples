@@ -5,8 +5,10 @@ input item description, and then fills the remaining fields based on Aito predic
 operation, the robot asks from the user, whether the invoice should be uploaded to Aito. If it is,
 the invoice is inserted to the database.
 
-This robot is very similar to the robotframework robot. It's main difference is that
-it's written with Python and Selenium instead of Robot Framework.
+![The intelligent invoice form filling robot in action](resources/invoice-form.gif?raw=true "Robot framework bot fill missing fields, once you input the 'Item Description' field")
+
+This robot is very similar to [the robotframework invoice robot](../robotframework-invoice-form).
+It's main difference is that it's written with Python and Selenium instead of Robot Framework.
 
 # How to run?
 

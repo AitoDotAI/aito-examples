@@ -2,7 +2,7 @@
 
 This demo contains a simple attended bot, which opens an invoice form in a browser, requests user to input item description, and then fills the remaining fields based on Aito predictions.
 
-![Item description filled](resources/invoice-form.gif?raw=true "Robot framework bot fill missing fields, once you input the 'Item Description' field")
+![The intelligent invoice form filling robot in action](resources/invoice-form.gif?raw=true "Robot framework bot fill missing fields, once you input the 'Item Description' field")
 
 ## How does it work?
 

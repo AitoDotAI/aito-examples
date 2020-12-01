@@ -13,10 +13,10 @@ import json
 df = pandas.read_csv("../datasets/invoice-automation/invoice_data.csv")
 print("loaded the invoice data.")
 
-# 2. load schema
+# 2. load the database schema
 with open("schema.json") as f:
     schema = json.load(f)
-print("wrote the invoice schema in schema.json.")
+print("loaded the invoice schema from schema.json.")
 
 # 3. create the Aito table
 aito_instance_url = os.environ.get('AITO_INSTANCE_URL')
@@ -27,7 +27,7 @@ delete_table(client=aito_client, table_name='invoice_data')
 create_table(client=aito_client, table_name='invoice_data', schema=schema)
 print("created the aito database table.")
 
-# 4. convert the dataframe to have correct type
+# 4. convert the dataframe to have correct types
 entries = DataFrameHandler().convert_df_using_aito_table_schema(
   df=df,
   table_schema=schema
