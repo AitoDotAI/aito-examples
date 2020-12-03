@@ -25,19 +25,17 @@ Next, you can prepare the database with:
 AITO_INSTANCE_URL=<YOU_HOST_URL> AITO_API_KEY=<YOUR_API_KEY> ./prepare.py
 ```
 
-And run the robot with
+You can run the evalutions with:
+
+```
+AITO_INSTANCE_URL=<YOU_HOST_URL> AITO_API_KEY=<YOUR_API_KEY> ./evaluate.py
+```
+
+Run the robot with:
 
 ```
 AITO_INSTANCE_URL=<YOU_HOST_URL> AITO_API_KEY=<YOUR_API_KEY> ./robot.py
 ```
-
-Alternatively, you can run the robot against the public-1 database:
-
-```
-AITO_INSTANCE_URL=https://public-1.api.aito.ai AITO_API_KEY=bvss2i2dIkaWUfBCdzEO89LpxUkwO3A24hYg8MBq ./robot.py
-```
-
-NOTE that the robot cannot add more data to the public-1 database, because it lacks the read write key. If you try to add data using the robot, it will fail with an exception.
 
 # How to use the robot?
 
